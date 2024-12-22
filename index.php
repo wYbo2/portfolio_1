@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Georgia;
+            scroll-behavior: smooth;
+            background-color: lightblue;
+        }
+        .hero {
+            background: url('images/bg1.jpg') center/cover no-repeat;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.25rem;
+        }
+        
+        .hero .img-fluid{
+            max-width: 500px;
+            max-height: 500px;
+        }
+        .hero h1, .hero p {
+            text-align: left;
+        }
+        @media (max-width: 768px) {
+            .hero h1, .hero p {
+            text-align: center;
+            }
+        }
+        
+        img.rounded-circle {
+            width: 300px; 
+            height: 300px; 
+            object-fit: cover;
+        }
+        
+        .navbar {
+            background-color: rgb(0, 0, 0, 0.8);
+        }
+        .navbar a {
+            color: white !important;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            border-radius: 5px 5px 0 0;
+        }
+        
+        .card-title{
+            font-weight: bold;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .fade-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+        .fade-up.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        a {
+            color: #007BFF; /* Bootstrap primary color */
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #0056b3; /* Darker shade on hover */
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero">
+    <div class="container" >
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h1 class="animate__animated animate__fadeInDown">Hello!, I'm Wai Yan Bo Bo</h1>
+                <p class="animate__animated animate__fadeInUp">A dedicated future engineer creating impactful solutions.</p>  
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="images/pp.jpg" class="img-fluid rounded-circle"> 
+            </div>
+        </div>
+        
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container fade-up">
+        <h2 class="section-title">About Me</h2>
+        <p class="text-center">I am a computer engineering student passionate about designing and developing cutting-edge systems and software. 
+            With a solid foundation in hardware and software integration, I aim to create innovative solutions that solve real-world problems. 
+            My areas of interest include embedded systems, machine learning, and software designs.</p>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<!--<section id="skills" class="py-5 bg-light"> -->
+<section id="skills" class="py-5">
+    <div class="container fade-up">
+        <h2 class="section-title">My Skills</h2>
+        <div class="row text-center">
+            <div class="col-md-3">
+                <h4>Programming Languages</h4>
+                <p>Proficient in C++, Python, Java, as well as HTML, CSS with bootstrap, JavaScript and PHP for website designs</p>
+            </div>
+            <div class="col-md-3">
+                <h4>Hardware Design</h4>
+                <p>Strong foundational knowledge of computer hardware systems, with experience in microcontrollers and embedded systems such as Arduino and Raspberry Pi.</p>
+            </div>
+            <div class="col-md-3">
+                <h4>Data Analysis</h4>
+                <p>Skilled in analyzing and interpreting data to optimize performance.</p>
+            </div>
+            <div class="col-md-3">
+                <h4>Project Management</h4>
+                <p>Capable of organizing and managing projects effectively, ensuring timely completion and high-quality outcomes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="py-5">
+    <div class="container fade-up">
+        <h2 class="section-title">My Projects</h2>
+        <div class="row">
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <video width="100%" autoplay muted loop controls>
+                        <source src="images/mad_app.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title">HEALTH SYNC Android App
+(2024)</h5>
+                        <p class="card-text">Using Java, and Android Studio, my
+friends and I created an app for all age
+group where users can make
+reservations to the registered clinics. At
+the same time, clinics staff can use the
+app to manage the appointments, and
+timetables. This app also features QR
+code scanning, Database Handling, and
+Chat functions.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="images/mapp2.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Microcontroller Project (2024)</h5>
+                        <p class="card-text">With the STM32F103 MCU and C++, our team developed a smart mailbox 
+                            system that enhances traditional mailboxes by incorporating modern automation features. 
+                            The project includes:</p>
+                        <p class="card-text">• Smart Notifications: Real-time notifications sent to the user when mail is detected</p>
+                        <p class="card-text">• Remote Control and Motion Detection: Integrated sensors and controllers allow users to monitor and operate the mailbox remotely</p>
+                        <p class="card-text">• Security Enhancement: Added a passcode input system alongside fingerprint authentication for secure access, implemented with Raspberry Pi and Arduino.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <video width="100%" autoplay muted loop controls>
+                        <source src="images/web.mp4" type="video/mp4">
+                    </video>
+                    <video muted loop controls width="100%">
+                        <source src="images/web1.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title">Business Website (2024)</h5>
+                        <p class="card-text">Designed and developed a responsive restaurant 
+                            website that enables businesses to professionally showcase their offerings 
+                            and manage reservations. Key features include:</p>
+                        <p class="card-text">• Interactive Menus and Special Offers: Dynamic content to highlight restaurant descriptions, menus, and promotions.</p>
+                        <p class="card-text">• Reservation Management System: Allows users to book tables based on date and time, optimizing operational efficiency for restaurants.
+</p>
+                        <p class="card-text">• HTML and CSS with bootstrap for responsive design and user-friendly interfaces</p>
+                        <p class="card-text">• JavaScript for dynamic interactivity</p>
+                        <p class="card-text">• PHP for backend functionalities, ensuring seamless reservation management</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="py-5">
+    <div class="container fade-up">
+        <div class="row">
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="images/python_IOT.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Safe With IoT Project(2024)</h5>
+                        <p class="card-text">Developed a smart home safe box integrating hardware and software enhancements with IoT capabilities. 
+                            Key features include:</p>
+                        <p class="card-text">• Access Logs: Tracks and displays access data with time stamps</p>
+                        <p class="card-text">• Passcode Management: Monitors and updates secure passcodes</p>
+                        <p class="card-text">• Temperature Monitoring: Real-time surrounding temperature detection</p>
+                        <p class="card-text">• Remote Control: Unlock and lock the safe via an interactive web-based interface</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <video width="100%" autoplay muted loop controls>
+                        <source src="images/IMG_4038.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title">Arduino Project (2023)</h5>
+                        <p class="card-text">Using C++, Arduino UNO R3, and
+various sensors such as ultrasonic and
+infrared sensors, we created the small
+car that can be programmed to travel in
+predetermined path. This product is
+mainly focused to be able to deliver
+required medications to the needing
+population without or very little help.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="images/ytu_project1.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Electronic Circuit Project (2020)</h5>
+                        <p class="card-text">Developed a home automation system using the IC 4017 
+                            Decade Counter to provide a convenient and intuitive solution for controlling room lights. 
+                            The key objective was to allow lights to be operated via a simple hand clap, 
+                            offering an efficient and user-friendly automation option</p>
+                        <p class="card-text">• Technical Components: Utilized the IC 4017 alongside basic electronic components like resistors, 
+                            capacitors, and transistors to design the circuit.</p>
+                        <p class="card-text">• Outcome: A low-cost, intuitive home automation solution with minimal hardware requirements. </p>
+                        <p class="card-text">This project helped me develop a deeper understanding of electronics, circuit design, and practical automation applications.</p>
+                        <p class="card-text">(Rightmost, in the red shirt)</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section id="skills" class="py-5">
+    <div class="container fade-up">
+        <h2 class="section-title">Soft Skills</h2>
+        <div class="row text-center">
+            <div class="col-md-3">
+                <h4>Teamwork</h4>
+                <p>Collaborated effectively in both academic and athletic settings, fostering a supportive and goal-driven environment.</p>
+            </div>
+            <div class="col-md-3">
+                <h4>Communication</h4>
+                <p>Developed strong interpersonal and technical communication skills through collaborative engineering projects and coaching in swimming.</p>
+            </div>
+            <div class="col-md-3">
+                <h4>Problem-Solving</h4>
+                <p>Demonstrated critical thinking and innovative solutions in engineering challenges and fitness training optimization.</p>
+            </div>
+            <div class="col-md-3">
+                <h4>Adaptability</h4>
+                <p>Quickly adjusted to new challenges and environments, as well as emerging new technologies.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Extra Curricular Activities Section -->
+<section id="activities" class="py-5">
+    <div class="container fade-up">
+        <h2 class="section-title">Extra Curricular Activities</h2>
+        <div class="row">
+            <div class="col-md-3 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="images/exco.jpeg" class="card-img-top" alt="Activity 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Singapore Polytechnic Swim Team ExCo (2024 - Present)</h5>
+                        
+                        <p class="card-text">• Team Management and Admissions:
+Oversee the recruitment of new swimmers, ensuring a seamless admission process 
+and fostering inclusivity for swimmers of all skill levels.</p>   
+                        <p class="card-text">• Equipment Coordination:
+Manage the procurement, maintenance, and inventory of
+training equipments to ensure all team members have access to high-quality resources.</p>
+                        <p class="card-text">• Competition and Trials Preparation:
+Coordinate the logistics for inter-school competitions and internal trials.</p>
+                        <p class="card-text">• Team-Bonding Initiatives:
+Plan and organize team-building activities to promote a positive, 
+supportive, and cohesive team environment.</p>
+                        <p class="card-text">• Administrative Support:
+Handle communication with the coach, event organizers, and team members, regarding schedules, updates, and expectations.</p>
+                        <p class="card-text">(2nd Row, in the middle)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="images/ytu_su.jpg" class="card-img-top" alt="Activity 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Student Union at Yangon Technological University Yangon, Myanmar (2018-2020)</h5>
+                        <p class="card-text">•"Most Outstanding Volunteer" certificate awarded by YTU's SU(2019)
+</p>
+                        <p class="card-text">•
+Information Team, responsible for photographic records of events, seminars, and
+conventions.</p>
+                        <p class="card-text">•
+Master Plan Team, responsible for planning, supervising for the renovation and
+restoration of old academic buildings in the campus.</p>
+                        <p class="card-text">•
+IT Students' Association 2019, Yangon Technological University Yangon, Myanmar
+•
+Worked as the audit in the Information Team</p>
+                        <p class="card-text">(1st Pic, 3rd from the left,2nd Pic, 2rd from the right)</p>
+
+</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="images/sea_youth.jpg" class="card-img-top" alt="Activity 3">
+                    <div class="card-body">
+                        <h5 class="card-title">46th Southeast Asian and Japanese Youth Program 2019</h5>
+                        <p class="card-text"> Yangon Technological University Yangon, Myanmar</p>
+                        <p class="card-text">• Part of the host team from YTU SU</p>
+                        <p class="card-text">•
+Served as an event photographer, capturing key moments of cultural exchange, activities, 
+games, and collaborative projects between international students and YTU participants..</p>
+                        <p class="card-text">• Facilitated smooth interactions and engagement between local and foreign students by documenting their experiences, 
+                            contributing to the program's success and post-event coverage.</p>
+                        <p class="card-text">(1st Pic, 2nd row, leftmost with the yellow shirt)</p>
+</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="images/msf1.jpg" class="card-img-top" alt="Activity 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Regional Swimmer in Myanmar Swimming Federation (2012 - 2018)</h5>
+                        <p class="card-text">
+                            Myanmar Swimming Team Yangon, Myanmar
+                        </p>
+                        <p class="card-text">
+                            • Preliminarily selected for 27th SEA Games(2013):Achieved qualifying times and was shortlisted to represent Myanmar.
+                        </p>
+                        <p class="card-text">
+                            • Competed in multiple regional and national competitions.
+                        <p class="card-text">
+                            • Gained experience in balancing training schedules with academic responsibilities.
+                        <p class="card-text">(leftmost, in the white shirt)</p>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section id="certificates" class="py-5">
+    <div class="container fade-up">
+        <h2 class="section-title">Certifications</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="images/cert1.png" class="img-fluid rounded shadow" alt="Certificate 1">
+            </div>
+            <div class="col-md-3">
+                <img src="images/cert2.png" class="img-fluid rounded shadow" alt="Certificate 2">
+            </div>
+            <div class="col-md-3">
+                <img src="images/cert3.png" class="img-fluid rounded shadow" alt="Certificate 3">
+            </div>
+            <div class="col-md-3">
+                <img src="images/cert4.png" class="img-fluid rounded shadow" alt="Certificate 4">
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container fade-up">
+        <h4 class="section-title">Contact Me</h4>
+        <!--<form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="mb-3">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+                <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>-->
+        <div class="text-center">
+            <p>
+            <a href="mailto:waib77.23@ichat.sp.edu.sg" class="text-decoration-none">📧 waib77.23@ichat.sp.edu.sg</a>
+            </p>
+            <p>
+            <a href="https://github.com/wYbo2" target="_blank" class="text-decoration-none">💻 GitHub: github.com/wYbo2</a>
+            </p>
+            <p>
+            <a href="tel:+6584176860" class="text-decoration-none">📞 +65 84176860</a>
+            </p>
+        </div>
+        
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Wai Yan Bo Bo. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Scroll animation logic
+    document.addEventListener('DOMContentLoaded', () => {
+        const fadeElements = document.querySelectorAll('.fade-up');
+
+        const handleScroll = () => {
+            fadeElements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 50) {
+                    el.classList.add('show');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Trigger on load
+    });
+</script>
+</body>
+</html>
