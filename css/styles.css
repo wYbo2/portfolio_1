@@ -1,0 +1,467 @@
+/* --- Root Variables (Dark Theme) --- */
+:root {
+    --bg-dark: #121212;
+    /* Deep Black Main Background */
+    --bg-card: #1E1E1E;
+    /* Slightly lighter for Cards */
+    --text-main: #ffffff;
+    /* Pure White for Headings */
+    --text-body: #e0e0e0;
+    /* Bright Off-White for Body Text */
+    --text-muted: #b0b0b0;
+    /* Light Grey for secondary text */
+    --accent: #00d2ff;
+    /* Cyan Accent */
+    --accent-secondary: #007bff;
+    --shadow-glow: 0 0 20px rgba(0, 210, 255, 0.3);
+}
+
+/* --- Global Styles --- */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-body);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-main);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+p,
+.lead,
+li {
+    color: var(--text-body) !important;
+    /* Force readability */
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.text-accent {
+    color: var(--accent) !important;
+}
+
+/* Override Bootstrap's text-muted for dark mode */
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* --- Navbar --- */
+.navbar {
+    background: rgba(18, 18, 18, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--accent) !important;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: var(--text-body) !important;
+    font-weight: 500;
+    margin: 0 10px;
+    position: relative;
+    opacity: 0.9;
+    transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent) !important;
+    opacity: 1;
+}
+
+/* Desktop Underline Animation (Default) */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent);
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.navbar-toggler {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-main);
+    transition: all 0.3s;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(0, 210, 255, 0.3);
+}
+
+/* Hover effect for the toggler button itself */
+.navbar:hover .navbar-toggler {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+/* --- Hero Section --- */
+.hero {
+    background: radial-gradient(circle at 20% 50%, rgba(0, 210, 255, 0.15) 0%, transparent 60%),
+        radial-gradient(circle at 80% 20%, rgba(0, 123, 255, 0.15) 0%, transparent 60%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    position: relative;
+}
+
+.hero-img {
+    border-radius: 50%;
+    border: 4px solid var(--accent);
+    box-shadow: var(--shadow-glow);
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.hero-img:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 0 40px rgba(0, 210, 255, 0.5);
+}
+
+/* Buttons */
+.btn-primary-custom {
+    background: linear-gradient(45deg, var(--accent), var(--accent-secondary));
+    border: none;
+    color: #000 !important;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary-custom:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 210, 255, 0.4);
+}
+
+.btn-outline-custom {
+    border: 2px solid var(--text-main);
+    color: var(--text-main);
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+    background: transparent;
+    transition: all 0.3s;
+}
+
+.btn-outline-custom:hover {
+    background: var(--text-main);
+    color: #000;
+    border-color: var(--text-main);
+}
+
+/* --- Sections --- */
+section {
+    padding: 100px 0;
+    position: relative;
+    background-color: var(--bg-dark);
+}
+
+/* FIXED: Clean Desktop Centering */
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    text-align: center;
+    /* Centers the text */
+    width: 100%;
+    /* Ensures it spans the container */
+    display: block;
+    /* Standard block behavior */
+    color: var(--text-main);
+    /* Removed 'left' and 'transform' properties that caused misalignment */
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--accent);
+    margin: 15px auto 0;
+    /* 'auto' margin centers the block element */
+    border-radius: 2px;
+}
+
+/* --- Experience Timeline --- */
+.timeline {
+    border-left: 3px solid rgba(255, 255, 255, 0.1);
+    padding-left: 30px;
+    margin-left: 10px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -39px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: var(--bg-dark);
+    border: 4px solid var(--accent);
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.timeline-item:hover::before {
+    background: var(--accent);
+}
+
+.timeline-date {
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.timeline-role {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: var(--text-main);
+}
+
+.timeline-company {
+    font-size: 1.1rem;
+    color: var(--text-muted) !important;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* --- Cards --- */
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: var(--accent);
+}
+
+.card-title {
+    color: var(--text-main);
+    font-weight: 700;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-text {
+    color: var(--text-body) !important;
+    font-size: 0.95rem;
+}
+
+.tech-badge {
+    background: rgba(0, 210, 255, 0.1);
+    color: var(--accent);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 6px;
+    margin-bottom: 8px;
+    display: inline-block;
+    border: 1px solid rgba(0, 210, 255, 0.2);
+    transition: all 0.3s;
+}
+
+.card:hover .tech-badge {
+    background: rgba(0, 210, 255, 0.2);
+}
+
+.card-media {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    background: #000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* --- Cert Box --- */
+.cert-box {
+    background: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 30px 20px;
+    border-radius: 12px;
+    height: 100%;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cert-box:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Contact Section / Footer Icons --- */
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.contact-item:hover .icon-circle {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--accent);
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
+    transform: translateY(-5px);
+}
+
+.contact-item:hover i {
+    color: var(--accent);
+}
+
+.contact-item small {
+    color: var(--text-body);
+    font-weight: 500;
+}
+
+/* --- Footer --- */
+footer {
+    background: #080808;
+    padding: 40px 0;
+    border-top: 1px solid #222;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* --- RESPONSIVE (MOBILE/VERTICAL) --- */
+@media (max-width: 991px) {
+    .hero {
+        text-align: center;
+        padding-top: 120px;
+    }
+
+    .hero .row {
+        flex-direction: column-reverse;
+    }
+
+    .hero-img {
+        width: 280px;
+        height: 280px;
+        margin-bottom: 40px;
+    }
+
+    /* --- LEFT ALIGN SECTION TITLES ON MOBILE --- */
+    .section-title {
+        font-size: 2rem;
+        text-align: left;
+        /* Force Left Align */
+        padding-left: 15px;
+        /* Match Bootstrap container padding */
+    }
+
+    .section-title::after {
+        margin: 15px 0;
+        /* Align underline left */
+    }
+
+    .navbar-collapse {
+        background: rgba(18, 18, 18, 0.95);
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* --- NAVBAR FIX FOR MOBILE --- */
+    .nav-link::after {
+        display: none !important;
+    }
+
+    .nav-link {
+        display: block;
+        width: 100%;
+        padding: 10px 15px;
+        margin: 5px 0;
+        border-radius: 6px;
+        border-left: 3px solid transparent;
+        text-align: left;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        background: rgba(255, 255, 255, 0.05);
+        border-left-color: var(--accent);
+        color: var(--accent) !important;
+        padding-left: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        margin-left: 0;
+        padding-left: 20px;
+    }
+
+    .timeline-item::before {
+        left: -29px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .btn-primary-custom,
+    .btn-outline-custom {
+        width: 100%;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .hero-img {
+        width: 220px;
+        height: 220px;
+    }
+}

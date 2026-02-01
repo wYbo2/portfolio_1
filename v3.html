@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wai Yan Bo Bo | Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        /* CUSTOM FILTER BUTTONS (Glassmorphism) */
+        .btn-filter {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.05); /* Transparent Dark */
+            color: rgba(255, 255, 255, 0.8);
+            border-radius: 50px; /* Pill shape */
+            padding: 10px 28px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            margin: 0 5px;
+        }
+
+        .btn-filter:hover {
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            border-color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .btn-filter.active {
+            background: #0d6efd; /* Your accent color (Blue) */
+            border-color: #0d6efd;
+            color: #fff;
+            box-shadow: 0 0 20px rgba(13, 110, 253, 0.4); /* Neon Glow */
+        }
+
+        /* BADGE TWEAKS */
+        .tech-badge {
+            display: inline-block;
+            padding: 0.4em 0.8em;
+            font-size: 0.8em;
+            font-weight: 600;
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#">&lt;WYBB /&gt;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#activities">Activities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="row align-items-center flex-column-reverse flex-lg-row">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <p class="text-uppercase fw-bold mb-2 text-accent" data-aos="fade-down">Year 3 Computer Engineering Student</p>
+                    <h1 class="display-2 fw-bold mb-3 text-white" data-aos="fade-up" data-aos-delay="100">Wai Yan Bo Bo</h1>
+                    <h3 class="fw-light mb-4 text-white" data-aos="fade-up" data-aos-delay="200">
+                        Specializing in <span class="text-accent">Embedded Systems</span> & <span class="text-accent">Software Development</span>.
+                    </h3>
+                    <p class="lead mb-5 w-lg-75 mx-auto mx-lg-0" data-aos="fade-up" data-aos-delay="300">
+                        A tech enthusiast dedicated to developing cutting-edge solutions to real-world problems through hardware and software integration.
+                    </p>
+                    <div data-aos="fade-up" data-aos-delay="400">
+                        <a href="#projects" class="btn btn-primary-custom me-3">View Projects</a>
+                        
+                        <a href="assets/resume.pdf" target="_blank" class="btn btn-outline-custom" download>
+                            <i class="bi bi-download me-2"></i>Download Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center mb-5 mb-lg-0" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="images/pp2.png" class="hero-img" alt="Profile">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center">
+                    <p class="fs-5 lh-lg">
+                        I am a passionate and results-driven Computer Engineering student with a strong foundation in both hardware and software integration.
+                        My areas of interest lie in <strong class="text-white">embedded systems, machine learning, and innovative software design</strong>.
+                    </p>
+                    <p class="fs-5 lh-lg">
+                        Beyond my technical skills, I am an experienced leader and collaborator. Whether leading the Swim Team ExCo or volunteering with the Student Union,
+                        I bring strong project management and communication skills to every team I join.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Work Experience</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="timeline">
+
+                        <div class="timeline-item" data-aos="fade-left">
+                            <div class="timeline-date">March 2024 - August 2024</div>
+                            <h4 class="timeline-role">Production Engineering Intern</h4>
+                            <p class="timeline-company">Shimano (Singapore) Pte Ltd</p>
+                            <div class="timeline-desc">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Engineered and deployed a full-stack diagnostic and video monitoring system for factory machinery.</li>
+                                    <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Developed AI computer vision triggers using <strong>Python and YOLOv8</strong> to automatically detect and record machine errors.</li>
+                                    <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Containerized the application using <strong>Docker</strong> for deployment on an Nvidia Jetson Nano platform.</li>
+                                    <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Programmed and integrated a Human Machine Interface (HMI) using industrial software (GX Work3, GT Designer3).</li>
+                                </ul>
+                            </div>
+                            <div class="mt-3">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">YOLOv8</span>
+                                <span class="tech-badge">Docker</span>
+                                <span class="tech-badge">PLC/HMI</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" data-aos="fade-left" data-aos-delay="100">
+                            <div class="timeline-date">October 2023 - Present</div>
+                            <h4 class="timeline-role">Swim Coach</h4>
+                            <p class="timeline-company">Quattor Swim School</p>
+                            <p class="timeline-desc">
+                                Instruct swimmers of all ages and skill levels. Collaborate with other coaches for teaching programs and help students build water confidence.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="text-center mt-5">
+                        <a href="https://www.linkedin.com/in/waiyanbobo" target="_blank" class="btn btn-outline-custom">
+                            <i class="bi bi-linkedin me-2"></i> View Full Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Education</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="card h-100 p-4 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-mortarboard-fill fs-1 text-accent mb-3"></i>
+                            <h4 class="card-title">Singapore Polytechnic</h4>
+                            <p class="fw-bold text-white mb-1">Diploma in Computer Engineering</p>
+                            <p class="text-muted small">April 2023 - March 2026</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 p-4 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-building-fill fs-1 text-accent mb-3"></i>
+                            <h4 class="card-title">Yangon Technological University</h4>
+                            <p class="fw-bold text-white mb-1">Computer Engineering and IT</p>
+                            <p class="text-muted small">December 2018 - March 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-3 col-6" data-aos="zoom-in">
+                    <div class="card h-100 text-center p-3">
+                        <i class="bi bi-code-square fs-1 mb-3 text-accent"></i>
+                        <h4 class="h5 text-white">Languages</h4>
+                        <p class="small">C++, Python, Java, PHP, JavaScript, HTML, CSS</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card h-100 text-center p-3">
+                        <i class="bi bi-cpu fs-1 mb-3 text-accent"></i>
+                        <h4 class="h5 text-white">Hardware & IoT</h4>
+                        <p class="small">Arduino, Raspberry Pi, STM32, Integrated Circuits</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card h-100 text-center p-3">
+                        <i class="bi bi-cloud fs-1 mb-3 text-accent"></i>
+                        <h4 class="h5 text-white">Cloud & Tools</h4>
+                        <p class="small">AWS, Docker, Android Studio, Git</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card h-100 text-center p-3">
+                        <i class="bi bi-kanban fs-1 mb-3 text-accent"></i>
+                        <h4 class="h5 text-white">Soft Skills</h4>
+                        <p class="small">Project Planning, Team Leadership, Communication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-12 text-center">
+                    <button class="btn btn-filter active" onclick="filterProjects('all')">All Projects</button>
+                    <button class="btn btn-filter" onclick="filterProjects('software')">Software & AI</button>
+                    <button class="btn btn-filter" onclick="filterProjects('hardware')">Hardware & IoT</button>
+                </div>
+            </div>
+
+            <div class="row mb-5 project-item software" data-aos="fade-up">
+                <div class="col-12">
+                    <div class="card border-0 shadow-lg overflow-hidden">
+                        <div class="row g-0">
+                            
+                            <div class="col-lg-7 position-relative bg-black" style="min-height: 300px;">
+                                <video 
+                                    class="position-absolute w-100 h-100 object-fit-cover"
+                                    autoplay muted loop controls 
+                                    poster="images/ai_poster.jpg">
+                                    <source src="images/ML_AI.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+
+                            <div class="col-lg-5 bg-dark">
+                                <div class="card-body p-4 p-lg-5 d-flex flex-column justify-content-center h-100">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="badge bg-danger me-2">LATEST WORK</span>
+                                        <span class="badge border border-light">Computer Vision</span>
+                                    </div>
+
+                                    <h3 class="card-title fw-bold text-white mb-3">AI Fruit Detection System</h3>
+                                    
+                                    <div class="d-flex flex-wrap gap-2 mb-4">
+                                        <span class="tech-badge">TensorFlow</span>
+                                        <span class="tech-badge">OpenCV</span>
+                                        <span class="tech-badge">Python</span>
+                                        <span class="tech-badge">CNN</span>
+                                    </div>
+                                    
+                                    <p class="card-text text-light mb-4">
+                                        A smart Computer Vision system that detects and classifies fruits in real-time. 
+                                        I designed a custom Convolutional Neural Network (CNN) to instantly distinguish between bananas, dragonfruits, and unknown objects with high precision.
+                                    </p>
+                                    
+                                    <ul class="list-unstyled text-light mb-4 small">
+                                        <li class="mb-3 d-flex align-items-start">
+                                            <i class="bi bi-trophy-fill text-accent me-2 fs-5"></i>
+                                            <div>
+                                                <strong>99.2% Accuracy</strong><br>
+                                                <span class="text-white-50">Achieved excellent reliability using advanced mixed-precision training.</span>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3 d-flex align-items-start">
+                                            <i class="bi bi-camera-video-fill text-accent me-2 fs-5"></i>
+                                            <div>
+                                                <strong>Live Webcam Detection</strong><br>
+                                                <span class="text-white-50">Works instantly with any standard camera to identify objects on the fly.</span>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3 d-flex align-items-start">
+                                            <i class="bi bi-graph-up-arrow text-accent me-2 fs-5"></i>
+                                            <div>
+                                                <strong>Optimized Performance</strong><br>
+                                                <span class="text-white-50">Uses 'Early Stopping' to prevent errors and ensure the model runs efficiently.</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <div>
+                                        <a href="https://github.com/wYbo2" target="_blank" class="btn btn-primary-custom px-4 py-2">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6 project-item software" data-aos="fade-up">
+                    <div class="card h-100">
+                        <video class="card-media" controls poster="images/mad_app_poster.jpg">
+                            <source src="images/mad_app.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-body">
+                            <h5 class="card-title">HEALTH SYNC App</h5>
+                            <div class="mb-3">
+                                <span class="tech-badge">Java</span>
+                                <span class="tech-badge">Android Studio</span>
+                                <span class="tech-badge">Database</span>
+                            </div>
+                            <p class="card-text">
+                                A comprehensive Android app for clinic reservations. Features include QR code scanning, real-time database handling, and in-app chat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 project-item hardware" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100">
+                        <img src="images/mapp2.jpg" class="card-media" alt="Smart Mailbox">
+                        <div class="card-body">
+                            <h5 class="card-title">Smart Mailbox System</h5>
+                            <div class="mb-3">
+                                <span class="tech-badge">STM32 MCU</span>
+                                <span class="tech-badge">C++</span>
+                                <span class="tech-badge">IoT Sensors</span>
+                            </div>
+                            <p class="card-text">
+                                An automated mailbox using STM32F103. Features real-time mobile notifications and fingerprint authentication.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 project-item software" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100">
+                        <video class="card-media" controls poster="images/web_poster.jpg">
+                            <source src="images/web.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-body">
+                            <h5 class="card-title">Restaurant Business Web</h5>
+                            <div class="mb-3">
+                                <span class="tech-badge">PHP</span>
+                                <span class="tech-badge">Bootstrap</span>
+                                <span class="tech-badge">MySQL</span>
+                            </div>
+                            <p class="card-text">
+                                A responsive website for restaurant management. Includes dynamic menus and a backend reservation system.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 project-item hardware" data-aos="fade-up">
+                    <div class="card h-100">
+                        <img src="images/python_IOT.jpg" class="card-media" alt="Smart Safe">
+                        <div class="card-body">
+                            <h5 class="card-title">IoT Smart Safe</h5>
+                            <div class="mb-3">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">IoT</span>
+                            </div>
+                            <p class="card-text">
+                                A smart safe integrating hardware with software. Tracks access logs, monitors temperature, and allows remote locking.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 project-item hardware" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100">
+                        <video class="card-media" controls poster="images/car_poster.jpg">
+                            <source src="images/IMG_4038.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-body">
+                            <h5 class="card-title">Autonomous Medic Car</h5>
+                            <div class="mb-3">
+                                <span class="tech-badge">Arduino UNO</span>
+                                <span class="tech-badge">Robotics</span>
+                            </div>
+                            <p class="card-text">
+                                A robotic vehicle designed to deliver medications autonomously. Navigates using ultrasonic and infrared sensors.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 project-item hardware" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100">
+                        <img src="images/ytu_project1.jpg" class="card-media" alt="Circuit Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Home Automation Circuit</h5>
+                            <div class="mb-3">
+                                <span class="tech-badge">Electronics</span>
+                                <span class="tech-badge">IC 4017</span>
+                            </div>
+                            <p class="card-text">
+                                A low-cost automation system using the IC 4017 Decade Counter. Enables control of room lights via hand claps.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="activities">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Extra Curricular Activities</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="card h-100">
+                        <img src="images/exco.jpeg" class="card-media" alt="SP Swim Team">
+                        <div class="card-body">
+                            <h5 class="card-title">SP Swim Team ExCo</h5>
+                            <p class="text-muted small mb-2">2024 - Present</p>
+                            <p class="card-text small">Oversee recruitment, manage inventory, and coordinate logistics for competitions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100">
+                        <img src="images/ytu_su.jpg" class="card-media" alt="YTU Student Union">
+                        <div class="card-body">
+                            <h5 class="card-title">YTU Student Union</h5>
+                            <p class="text-muted small mb-2">2018 - 2020</p>
+                            <p class="card-text small"><strong>"Most Outstanding Volunteer" (2019).</strong> Served on the Information Team for campus renovation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100">
+                        <img src="images/sea_youth.jpg" class="card-media" alt="SEA Youth Program">
+                        <div class="card-body">
+                            <h5 class="card-title">46th SEA Youth Program</h5>
+                            <p class="text-muted small mb-2">2019</p>
+                            <p class="card-text small">Served as event photographer and host team member. Facilitated cultural exchange.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100">
+                        <img src="images/bg1.jpg" class="card-media" alt="SP Swim Team">
+                        <div class="card-body">
+                            <h5 class="card-title">SP Swim Team</h5>
+                            <p class="text-muted small mb-2">2023 - 2026</p>
+                            <p class="card-text small">Represented SP in POL-ITE and IVP Games. Maintained rigorous training schedules alongside studies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100">
+                        <img src="images/msf1.jpg" class="card-media" alt="Regional Swimmer">
+                        <div class="card-body">
+                            <h5 class="card-title">Regional Swimmer</h5>
+                            <p class="text-muted small mb-2">2012 - 2018</p>
+                            <p class="card-text small">Myanmar Swimming Federation. Selected for 27th SEA Games (2013) preliminaries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title">Certifications</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="cert-box text-center">
+                        <i class="bi bi-cloud-check fs-1 text-warning mb-3"></i>
+                        <h5 class="text-white">AWS Academy Graduate</h5>
+                        <p class="text-muted small">Cloud Foundations</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="cert-box text-center">
+                        <i class="bi bi-box-seam fs-1 text-primary mb-3"></i>
+                        <h5 class="text-white">Docker</h5>
+                        <p class="text-muted small">Getting Up to Speed with Docker</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="cert-box text-center">
+                        <i class="bi bi-heart-pulse fs-1 text-danger mb-3"></i>
+                        <h5 class="text-white">Standard First Aid</h5>
+                        <p class="text-muted small">Course Certified</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="cert-box text-center">
+                        <i class="bi bi-water fs-1 text-info mb-3"></i>
+                        <h5 class="text-white">ASCA Level 2</h5>
+                        <p class="text-muted small">The Strokes School (International)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container text-center" data-aos="zoom-in">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="lead mb-5">Interested in my work? Let's connect.</p>
+            <div class="d-flex justify-content-center gap-4 flex-wrap">
+                <a href="mailto:williambubuwybb@gmail.com" class="contact-item">
+                    <div class="icon-circle"><i class="bi bi-envelope-fill fs-3 text-white"></i></div>
+                    <small>Email Me</small>
+                </a>
+                <a href="https://www.linkedin.com/in/waiyanbobo" target="_blank" class="contact-item">
+                    <div class="icon-circle"><i class="bi bi-linkedin fs-3 text-white"></i></div>
+                    <small>LinkedIn</small>
+                </a>
+                <a href="https://github.com/wYbo2" target="_blank" class="contact-item">
+                    <div class="icon-circle"><i class="bi bi-github fs-3 text-white"></i></div>
+                    <small>GitHub</small>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Wai Yan Bo Bo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+        function filterProjects(category) {
+            // Get all project items
+            const projects = document.querySelectorAll('.project-item');
+            
+            // Get all filter buttons
+            const buttons = document.querySelectorAll('.btn-filter');
+            
+            // Update active button state
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+                if(btn.textContent.toLowerCase().includes(category) || 
+                  (category === 'all' && btn.textContent === 'All Projects')) {
+                    btn.classList.add('active');
+                }
+            });
+
+            // Filter logic
+            projects.forEach(project => {
+                if (category === 'all') {
+                    project.style.display = 'block';
+                    // Re-trigger AOS animation
+                    project.classList.remove('aos-animate');
+                    setTimeout(() => project.classList.add('aos-animate'), 50);
+                } else {
+                    if (project.classList.contains(category)) {
+                        project.style.display = 'block';
+                        project.classList.remove('aos-animate');
+                        setTimeout(() => project.classList.add('aos-animate'), 50);
+                    } else {
+                        project.style.display = 'none';
+                    }
+                }
+            });
+            
+            // Refresh AOS layout
+            setTimeout(() => {
+                AOS.refresh();
+            }, 100);
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wai Yan Bo Bo | Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts (Outfit & Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Animate On Scroll (AOS) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#">&lt;WYBB /&gt;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#activities">Activities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="row align-items-center flex-column-reverse flex-lg-row">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <p class="text-uppercase fw-bold mb-2 text-accent" data-aos="fade-down">Year 3 Computer Engineering
+                        Student</p>
+                    <h1 class="display-2 fw-bold mb-3 text-white" data-aos="fade-up" data-aos-delay="100">Wai Yan Bo Bo
+                    </h1>
+                    <h3 class="fw-light mb-4 text-white" data-aos="fade-up" data-aos-delay="200">
+                        Specializing in <span class="text-accent">Embedded Systems</span> & <span
+                            class="text-accent">Software Development</span>.
+                    </h3>
+                    <p class="lead mb-5 w-lg-75 mx-auto mx-lg-0" data-aos="fade-up" data-aos-delay="300">
+                        A tech enthusiast dedicated to developing cutting-edge solutions to real-world problems through
+                        hardware and software integration.
+                    </p>
+                    <div data-aos="fade-up" data-aos-delay="400">
+                        <a href="#projects" class="btn btn-primary-custom me-3">View Projects</a>
+                        <a href="#contact" class="btn btn-outline-custom">Contact Me</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center mb-5 mb-lg-0" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="images/pp2.png" class="hero-img" alt="Profile">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center">
+                    <p class="fs-5 lh-lg">
+                        I am a passionate and results-driven Computer Engineering student with a strong foundation in
+                        both hardware and software integration.
+                        My areas of interest lie in <strong class="text-white">embedded systems, machine learning, and
+                            innovative software design</strong>.
+                    </p>
+                    <p class="fs-5 lh-lg">
+                        Beyond my technical skills, I am an experienced leader and collaborator. Whether leading the
+                        Swim Team ExCo or volunteering with the Student Union,
+                        I bring strong project management and communication skills to every team I join.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORK EXPERIENCE SECTION (Timeline Layout) -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Work Experience</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="timeline">
+
+                        <!-- 1. SHIMANO -->
+                        <div class="timeline-item" data-aos="fade-left">
+                            <div class="timeline-date">March 2024 - August 2024</div>
+                            <h4 class="timeline-role">Production Engineering Intern</h4>
+                            <p class="timeline-company">Shimano (Singapore) Pte Ltd</p>
+                            <div class="timeline-desc">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Engineered and
+                                        deployed a full-stack diagnostic and video monitoring system for factory
+                                        machinery.</li>
+                                    <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Developed AI computer
+                                        vision triggers using <strong>Python and YOLOv8</strong> to automatically detect
+                                        and record machine errors.</li>
+                                    <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Containerized the
+                                        application using <strong>Docker</strong> for deployment on an Nvidia Jetson
+                                        Nano platform.</li>
+                                    <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Programmed and
+                                        integrated a Human Machine Interface (HMI) using industrial software (GX Work3,
+                                        GT Designer3).</li>
+                                </ul>
+                            </div>
+                            <div class="mt-3">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">YOLOv8</span>
+                                <span class="tech-badge">Docker</span>
+                                <span class="tech-badge">PLC/HMI</span>
+                            </div>
+                        </div>
+
+                        <!-- 2. QUATTOR SWIM SCHOOL -->
+                        <div class="timeline-item" data-aos="fade-left" data-aos-delay="100">
+                            <div class="timeline-date">October 2023 - Present</div>
+                            <h4 class="timeline-role">Swim Coach</h4>
+                            <p class="timeline-company">Quattor Swim School</p>
+                            <p class="timeline-desc">
+                                Instruct swimmers of all ages and skill levels. Collaborate with other coaches for
+                                teaching programs and help students build water confidence.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- LinkedIn Button -->
+                    <div class="text-center mt-5">
+                        <a href="https://www.linkedin.com/in/waiyanbobo" target="_blank" class="btn btn-outline-custom">
+                            <i class="bi bi-linkedin me-2"></i> View Full Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Education</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="card h-100 p-4 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-mortarboard-fill fs-1 text-accent mb-3"></i>
+                            <h4 class="card-title">Singapore Polytechnic</h4>
+                            <p class="fw-bold text-white mb-1">Diploma in Computer Engineering</p>
+                            <p class="text-muted small">April 2023 - March 2026</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 p-4 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-building-fill fs-1 text-accent mb-3"></i>
+                            <h4 class="card-title">Yangon Technological University</h4>
+                            <p class="fw-bold text-white mb-1">Computer Engineering and IT</p>
+                            <p class="text-muted small">December 2018 - March 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-3 col-6" data-aos="zoom-in">
+                    <div class="card h-100 text-center p-3">
+                        <i class="bi bi-code-square fs-1 mb-3 text-accent"></i>
+                        <h4 class="h5 text-white">Languages</h4>
+                        <p class="small">C++, Python, Java, PHP, JavaScript, HTML, CSS</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card h-100 text-center p-3">
+                        <i class="bi bi-cpu fs-1 mb-3 text-accent"></i>
+                        <h4 class="h5 text-white">Hardware & IoT</h4>
+                        <p class="small">Arduino, Raspberry Pi, STM32, Integrated Circuits</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card h-100 text-center p-3">
+                        <i class="bi bi-cloud fs-1 mb-3 text-accent"></i>
+                        <h4 class="h5 text-white">Cloud & Tools</h4>
+                        <p class="small">AWS, Docker, Android Studio, Git</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card h-100 text-center p-3">
+                        <i class="bi bi-kanban fs-1 mb-3 text-accent"></i>
+                        <h4 class="h5 text-white">Soft Skills</h4>
+                        <p class="small">Project Planning, Team Leadership, Communication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            <div class="row g-4">
+
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="card h-100">
+                        <video class="card-media" autoplay muted loop controls>
+                            <source src="images/mad_app.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-body">
+                            <h5 class="card-title">HEALTH SYNC App</h5>
+                            <div class="mb-3">
+                                <span class="tech-badge">Java</span>
+                                <span class="tech-badge">Android Studio</span>
+                                <span class="tech-badge">Database</span>
+                            </div>
+                            <p class="card-text">
+                                A comprehensive Android app for clinic reservations. Features include QR code scanning
+                                for patient check-ins, real-time database handling, and in-app chat functions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100">
+                        <img src="images/mapp2.jpg" class="card-media" alt="Smart Mailbox">
+                        <div class="card-body">
+                            <h5 class="card-title">Smart Mailbox System</h5>
+                            <div class="mb-3">
+                                <span class="tech-badge">STM32 MCU</span>
+                                <span class="tech-badge">C++</span>
+                                <span class="tech-badge">IoT Sensors</span>
+                            </div>
+                            <p class="card-text">
+                                An automated mailbox using STM32F103. Features real-time mobile notifications, remote
+                                control via sensors, and high-security access using fingerprint authentication.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100">
+                        <video class="card-media" autoplay muted loop controls>
+                            <source src="images/web.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-body">
+                            <h5 class="card-title">Restaurant Business Web</h5>
+                            <div class="mb-3">
+                                <span class="tech-badge">PHP</span>
+                                <span class="tech-badge">Bootstrap</span>
+                                <span class="tech-badge">MySQL</span>
+                            </div>
+                            <p class="card-text">
+                                A professional, responsive website for restaurant management. Includes interactive
+                                dynamic menus and a backend reservation system allowing users to book tables.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="card h-100">
+                        <img src="images/python_IOT.jpg" class="card-media" alt="Smart Safe">
+                        <div class="card-body">
+                            <h5 class="card-title">IoT Smart Safe</h5>
+                            <div class="mb-3">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">IoT</span>
+                            </div>
+                            <p class="card-text">
+                                Developed a smart safe integrating hardware with software. Tracks access logs with
+                                timestamps, monitors surrounding temperature, and allows remote locking via web
+                                interface.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100">
+                        <video class="card-media" autoplay muted loop controls>
+                            <source src="images/IMG_4038.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-body">
+                            <h5 class="card-title">Autonomous Medic Car</h5>
+                            <div class="mb-3">
+                                <span class="tech-badge">Arduino UNO</span>
+                                <span class="tech-badge">Robotics</span>
+                            </div>
+                            <p class="card-text">
+                                A robotic vehicle designed to deliver medications autonomously. Programmed using C++ and
+                                Arduino to navigate predetermined paths using ultrasonic and infrared sensors.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100">
+                        <img src="images/ytu_project1.jpg" class="card-media" alt="Circuit Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Home Automation Circuit</h5>
+                            <div class="mb-3">
+                                <span class="tech-badge">Electronics</span>
+                                <span class="tech-badge">IC 4017</span>
+                            </div>
+                            <p class="card-text">
+                                Designed a low-cost home automation system using the IC 4017 Decade Counter. Enables
+                                control of room lights via hand claps, demonstrating practical application.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXTRA CURRICULAR ACTIVITIES SECTION -->
+    <section id="activities">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Extra Curricular Activities</h2>
+
+            <!-- justify-content-center ensures the bottom row is centered -->
+            <div class="row g-4 justify-content-center">
+
+                <!-- Activity 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="card h-100">
+                        <img src="images/exco.jpeg" class="card-media" alt="SP Swim Team">
+                        <div class="card-body">
+                            <h5 class="card-title">SP Swim Team ExCo</h5>
+                            <p class="text-muted small mb-2">2024 - Present</p>
+                            <p class="card-text small">
+                                Oversee recruitment, manage equipment inventory, and coordinate logistics for
+                                inter-school competitions and team-bonding events.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100">
+                        <img src="images/ytu_su.jpg" class="card-media" alt="YTU Student Union">
+                        <div class="card-body">
+                            <h5 class="card-title">YTU Student Union</h5>
+                            <p class="text-muted small mb-2">2018 - 2020</p>
+                            <p class="card-text small">
+                                <strong>"Most Outstanding Volunteer" (2019).</strong> Served on the Information Team and
+                                Master Plan Team for campus renovation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100">
+                        <img src="images/sea_youth.jpg" class="card-media" alt="SEA Youth Program">
+                        <div class="card-body">
+                            <h5 class="card-title">46th SEA Youth Program</h5>
+                            <p class="text-muted small mb-2">2019</p>
+                            <p class="card-text small">
+                                Served as event photographer and host team member. Facilitated cultural exchange between
+                                international students.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity 4 (NEW ITEM) -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100">
+                        <!-- Placeholder Image -->
+                        <img src="images/bg1.jpg" class="card-media" alt="SP Swim Team">
+                        <div class="card-body">
+                            <h5 class="card-title">SP Swim Team</h5>
+                            <p class="text-muted small mb-2">2023 - 2026</p>
+                            <p class="card-text small">
+                                Represented Singapore Polytechnic in competitive swimming, participating in the POL-ITE
+                                and IVP Games. Demonstrated discipline and resilience by maintaining rigorous training
+                                schedules alongside academic commitments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity 5 (Was previously Activity 4) -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100">
+                        <img src="images/msf1.jpg" class="card-media" alt="Regional Swimmer">
+                        <div class="card-body">
+                            <h5 class="card-title">Regional Swimmer</h5>
+                            <p class="text-muted small mb-2">2012 - 2018</p>
+                            <p class="card-text small">
+                                Myanmar Swimming Federation. Selected for 27th SEA Games (2013) preliminaries. Competed
+                                in multiple regional competitions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title">Certifications</h2>
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="cert-box text-center">
+                        <i class="bi bi-cloud-check fs-1 text-warning mb-3"></i>
+                        <h5 class="text-white">AWS Academy Graduate</h5>
+                        <p class="text-muted small">Cloud Foundations</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="cert-box text-center">
+                        <i class="bi bi-box-seam fs-1 text-primary mb-3"></i>
+                        <h5 class="text-white">Docker</h5>
+                        <p class="text-muted small">Getting Up to Speed with Docker</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="cert-box text-center">
+                        <i class="bi bi-heart-pulse fs-1 text-danger mb-3"></i>
+                        <h5 class="text-white">Standard First Aid</h5>
+                        <p class="text-muted small">Course Certified</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="cert-box text-center">
+                        <i class="bi bi-water fs-1 text-info mb-3"></i>
+                        <h5 class="text-white">ASCA Level 2</h5>
+                        <p class="text-muted small">The Strokes School (International)</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container text-center" data-aos="zoom-in">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="lead mb-5">Interested in my work? Let's connect.</p>
+
+            <div class="d-flex justify-content-center gap-4 flex-wrap">
+
+                <!-- Email -->
+                <a href="mailto:williambubuwybb@gmail.com" class="contact-item">
+                    <div class="icon-circle">
+                        <i class="bi bi-envelope-fill fs-3 text-white"></i>
+                    </div>
+                    <small>Email Me</small>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/waiyanbobo" target="_blank" class="contact-item">
+                    <div class="icon-circle">
+                        <i class="bi bi-linkedin fs-3 text-white"></i>
+                    </div>
+                    <small>LinkedIn</small>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/wYbo2" target="_blank" class="contact-item">
+                    <div class="icon-circle">
+                        <i class="bi bi-github fs-3 text-white"></i>
+                    </div>
+                    <small>GitHub</small>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Wai Yan Bo Bo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
