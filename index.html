@@ -972,6 +972,14 @@
             });
         });
 
+        const videos = document.querySelectorAll('video');
+            videos.forEach(video => {
+                video.play().catch(function(error) {
+                    // This catches the error if autoplay is denied
+                    console.log("Video autoplay failed: ", error);
+                });
+            });
+
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 </body>
